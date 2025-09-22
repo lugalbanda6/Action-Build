@@ -147,8 +147,7 @@ jobs:
             fi
           done
 
-          if [[ -z "$FOUND" || ! -s "$XML_PATH" ]]; then
-            echo "❌ 无法找到 ${FILE}.xml"
+          if [[ -z "$FOUND" || ! -s "$XML_PATH" ]]; then            
             exit 1
           fi
           echo "📥 下载完成，开始提取 revision..."
